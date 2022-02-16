@@ -1,0 +1,552 @@
+
+/****************
+ リセットcss
+*****************/
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+
+body {
+    margin: 0;
+    transform: translate3d(0,0,0);
+    
+}
+/***********************
+ header
+***********************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    color: #D3D3D3;
+}
+.list a{
+    color: #D3D3D3;
+    text-decoration: none;
+}
+.list .header__navitem {
+    margin-left: 30px;
+    font-size: 2rem;
+    
+}
+header .menu{
+    display: none;
+}
+header .menu-btn{
+    display: none;
+}
+@media (max-width: 480px){
+    header .menu{
+        display: block;
+    }
+    #nav{
+        display: none;
+    }
+    header .menu-btn{
+        display: block;
+    }
+
+/***
+ ハンバーガーメニュー
+******/
+/* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.menu-btn img{
+    width: 40px;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding:4rem .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+.menu__item a{
+    color: #fff;
+    text-decoration: none;
+}
+}
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+/********************
+    ロゴ　スタイル
+********************/
+.logo {
+    background-color: #f6b2a6;
+    width: 6%;
+    border-radius: 50%;
+}
+.logo h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #014c58;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 480px){
+    .logo{
+        border-radius: 54%;
+        width: 23%;
+    }
+
+}
+
+/*==================================================
+トップスライダーのためのcss
+===================================*/
+
+.top_slider {
+    padding: 0;
+    
+  }
+  /*　背景画像設定　*/
+  .top_slider img {
+      width: 100%;
+      height: 50rem;
+      object-fit: contain;
+  }
+  
+  
+  .slider-item {
+      width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+      height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+      background-repeat: no-repeat;/*背景画像をリピートしない*/
+      background-position: center;/*背景画像の位置を中央に*/
+      background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+  }
+  @media (max-width: 480px){
+    .top_slider img{
+        height: 20rem;
+    }
+  }  
+  
+ 
+/***********************
+ title_symbole
+***********************/
+/**左**/
+#title_symbol_left{
+    margin-left: 30px;
+    animation-name:fadeLeftAnime;
+    animation-duration:2.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    
+    
+}
+#title_symbol_left img{
+    width: 30%;
+    object-fit: cover;
+    float: left;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.title{
+    color: #D3D3D3;
+    margin-top: 7rem;
+}
+/**右**/
+#title_symbol_right {
+    animation-name:fadeRightAnime;
+    animation-duration:2.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+#title_symbol_right img{
+    width: 30%;
+    object-fit: cover;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}
+#title_symbol_right .title{
+    margin-left: 60%;
+    margin-bottom: 5%;
+}
+#contact_section .title{
+    text-align: center;
+}
+
+@media (max-width: 480px){
+
+    #title_symbol_left img{
+        display: none;
+    }
+
+    #title_symbol_right img{
+        display: none;
+    }
+    #title_symbol_left{
+        text-align: center;
+    }
+    #title_symbol_right{
+        text-align: center;
+    }
+    #title_symbol_right .title{
+        margin-left: 0;
+    }
+
+}
+
+/***********************
+ about_section
+***********************/
+#about_section {
+   
+    margin-bottom: 5%;
+    
+}
+
+
+
+
+/**about_sectionカード部分**/
+.card_about{
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0 20%;
+    margin-top: 5%;
+	background-color: #fff;
+	box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
+    position: relative;
+    z-index: 30;
+    }
+.about__card__title {
+	margin-bottom: 20px;
+}
+.about__card__img img{
+	margin-bottom: 20px;
+    margin-top: 20px;
+    border: solid 1px #DCDCDC;
+    border-radius: 50%;
+    width: 20%;
+    height: 12rem;
+    object-fit: cover;
+}
+.about__card__dis{
+	margin: 40px;
+	
+}
+
+.back_card {
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 3%);
+    width: 60%;
+    height: 25rem;
+    position: absolute;
+    z-index: 20;
+    top: 16%;
+    left: 24%;
+
+}
+@media (max-width: 480px){
+    .back_card{
+        display: none;
+    }
+    .card_about{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about__card__img img{
+        width: 42%;
+    }
+}
+/***********************
+ Works_section
+***********************/
+
+
+#works_section ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    
+  }
+
+.slider li{
+      text-align: center;
+      display: flex;
+      
+  }
+.slider img{
+    width: 30%;
+    border: 1px #DCDCDC solid;
+}
+@media (max-width: 480px){
+    .slider li{
+        display: block;
+    }
+}
+    
+/***********************
+ Skill_section
+***********************/
+
+
+.round_down{
+    border: solid 1px rgba(255,255,255,0);
+    border-radius: 50%;
+    width: 14%;
+    height: 13rem;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 0;
+    background: #E0FFFF;
+    
+    
+    
+}
+.round_up {
+    border: solid 1px rgba(255,255,255,0);
+    border-radius: 50%;
+    width: 14%;
+    height: 13rem;
+    text-align: center;
+    margin-left: 0;
+    background: #FFF8DC;
+    
+    
+    
+}
+.bubble{
+    padding: 5%;
+    
+}
+.round_up img{
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+}
+.round_down img{
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+}
+.bubble ul{
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.phone{
+    display: none;
+}
+@media (max-width: 480px){
+    .bubble {
+        display: none;
+        
+    }
+    .phone{
+        display: block;
+    }
+    .skill_content{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .skill_content div{
+        width: 50%;
+        text-align: center;
+        
+    }
+    .skill_content .yellow{
+        background:#FFF8DC;
+        border-radius: 11%;
+    }
+    .skill_content .blue{
+        background: #E0FFFF;
+        border-radius: 11%;
+    }
+    .skill_content img{
+        
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        
+    }
+    .skill_content .word{
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 56px;
+    }
+    .phone h1{
+        color: gray;
+    }
+    
+    
+
+   
+}
+
+/***********************
+ Contact_section
+***********************/
+#contact_section{
+    margin-bottom: 20%;
+}
+#contact_section .title{
+    margin-bottom: 5%;
+}
+
+#contact_section .icon{
+    text-align: center;
+}
+
+/***********************
+ footer
+***********************/
+footer .copy{
+    text-align: center;
+
+}
+
+
+/***********************
+ ページ上へ戻るボタン
+***********************/
+#page_top{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #3f98ef;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  #page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #3f98ef;
+  }
+
+
+
+/**動き**/
+
+@keyframes fadeLeftAnime{
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(2);
+    }
+  }
+
+  @keyframes fadeRightAnime{
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /**ふわっと**/
+ .fadein {
+    opacity : 0;
+    transform: translateY(24px);
+    transition: 5s;
+  }
+
+
