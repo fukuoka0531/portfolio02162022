@@ -54,6 +54,7 @@ header .menu-btn{
     text-align: center;
     padding: 15px;
 }
+
 @media (max-width: 480px){
     header .menu{
         display: block;
@@ -101,7 +102,9 @@ header .menu-btn{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #555;
+  background: whitesmoke;
+  font-family: 'Playfair Display', serif;
+
 }
 .menu__item{
   width: 100%;
@@ -112,7 +115,7 @@ header .menu-btn{
   box-sizing: border-box;
 }
 .menu__item a{
-    color: #fff;
+    color: gray;
     text-decoration: none;
 }
 }
@@ -146,6 +149,7 @@ header .menu-btn{
     text-align: center;
     color: #014c58;
     letter-spacing: 5px;
+    font-family: 'Gideon Roman', cursive;
     font-family: 'Playfair Display', serif;
 }
 
@@ -324,6 +328,9 @@ header .menu-btn{
         width: 42%;
     }
 }
+@media screen and (min-width: 768px){
+    .br-sp {display: none; }
+    }
 /***********************
  Works_section
 ***********************/
