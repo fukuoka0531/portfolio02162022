@@ -316,13 +316,17 @@ header .menu-btn{
 
 }
 @media (max-width: 480px){
+    .about{
+        margin: 0;
+    }
     .back_card{
         display: none;
     }
     .card_about{
-        width: 100%;
-        margin-left: 0;
+        width: 95%;
+        margin-left: 9px;
         margin-right: 0;
+        
     }
     .about__card__img img{
         width: 42%;
