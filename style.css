@@ -321,7 +321,8 @@ header .menu-btn{
     }
     .card_about{
         width: 100%;
-        margin: 10px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .about__card__img img{
         width: 42%;
@@ -361,7 +362,6 @@ header .menu-btn{
     .slider img{
         width: 100%;
         margin-bottom: 30px;
-        margin: 10px;
     }
 }
     
