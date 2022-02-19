@@ -31,8 +31,9 @@ header {
 .list {
     list-style: none;
     display: flex;
-    margin-right: 50px;
+    margin-right: 13rem;
     color: #D3D3D3;
+    font-family: 'Playfair Display', serif;
 }
 .list a{
     color: #D3D3D3;
@@ -48,6 +49,10 @@ header .menu{
 }
 header .menu-btn{
     display: none;
+}
+.header__navgroup{
+    text-align: center;
+    padding: 15px;
 }
 @media (max-width: 480px){
     header .menu{
@@ -129,9 +134,11 @@ header .menu-btn{
     ロゴ　スタイル
 ********************/
 .logo {
+    margin: 20px;
     background-color: #f6b2a6;
     width: 6%;
     border-radius: 50%;
+    
 }
 .logo h1{
     margin-top: 1rem;
@@ -139,6 +146,7 @@ header .menu-btn{
     text-align: center;
     color: #014c58;
     letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
 }
 
 @media (max-width: 480px){
@@ -193,15 +201,17 @@ header .menu-btn{
     
 }
 #title_symbol_left img{
-    width: 30%;
+    width: 34%;
     object-fit: cover;
     float: left;
     margin-right: 50px;
     margin-top: 20px;
+    margin-left: 10rem;
 }
 .title{
     color: #D3D3D3;
     margin-top: 7rem;
+    font-family: 'Playfair Display', serif;
 }
 /**右**/
 #title_symbol_right {
@@ -215,12 +225,12 @@ header .menu-btn{
     width: 30%;
     object-fit: cover;
     float: right;
-    margin-right: 50px;
+    margin-right: 10rem;
     margin-top: 20px;
     
 }
 #title_symbol_right .title{
-    margin-left: 60%;
+    margin-left: 50%;
     margin-bottom: 5%;
 }
 #contact_section .title{
@@ -275,6 +285,7 @@ header .menu-btn{
     }
 .about__card__title {
 	margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
 }
 .about__card__img img{
 	margin-bottom: 20px;
@@ -366,11 +377,17 @@ header .menu-btn{
     height: 13rem;
     text-align: center;
     margin-left: 0;
-    background: #FFF8DC;
-    
-    
-    
+    background: #FFF8DC; 
 }
+.round_up p{
+    font-family: 'Playfair Display', serif;
+    color: gray;
+}
+.round_down p{
+    font-family: 'Playfair Display', serif;
+    color: gray;
+}
+
 .bubble{
     padding: 5%;
     
@@ -436,6 +453,7 @@ header .menu-btn{
     }
     .phone h1{
         color: gray;
+        font-family: 'Playfair Display', serif;
     }
     
     
